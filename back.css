@@ -1,0 +1,605 @@
+body {
+	background-color: #000000;
+    display: block;
+    margin: 0px;
+}
+body.sidebar {
+	display: block;
+	margin: 5px;
+	overflow: hidden;
+}
+body.pagebar {
+	display: block;
+	margin: 5px;
+	overflow: hidden;
+}
+
+/* unvisited link */
+a:link {
+	color: #ffffff;
+    text-decoration: none;
+	text-shadow:
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+}
+/* visited link */
+a:visited {
+	color: #ffffff;
+    text-decoration: none;
+	text-shadow:
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+}
+/* mouse over link */
+a:hover {
+    color: #ffffff;
+	text-decoration: underline;
+	text-shadow:
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+}
+/* selected link */
+a:active {
+	 color: #ffffff;
+    text-decoration: none;
+	text-shadow:
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+}
+/* unvisited link */
+a.music:link {
+	color: #ffffff;
+    text-decoration: none;
+}
+/* visited link */
+a.music:visited {
+	color: #ffffff;
+    text-decoration: none;
+}
+/* mouse over link */
+a.music:hover {
+    color: #ffffff;
+	text-decoration: none;
+}
+/* selected link */
+a.music:active {
+	 color: #ffffff;
+    text-decoration: none;
+}
+/* unvisited link */
+a.pn:link {
+	color: #4CFF00;
+    text-decoration: none;
+}
+/* visited link */
+a.pn:visited {
+	color: #2A8E00;
+    text-decoration: none;
+}
+/* mouse over link */
+a.pn:hover {
+	color: #4CFF00;
+	text-decoration: underline;
+}
+/* selected link */
+a.pn:active {
+	color: #3AC400;
+    text-decoration: none;
+}
+
+
+@font-face { 
+	font-family: twinsfont_old; 
+	src: url('/twinsfont_v2.ttf');
+	} 
+@font-face { 
+	font-family: twinsfont; 
+	src: url('/Twelve Ton Goldfish.ttf');
+	} 
+font.shad {
+  font-family: Segoe UI, Tahoma, serif;
+  /* text-shadow:0px 0px 3px #00C221; */
+  /* text-shadow:0px 0px 1px #FFFFFF; */
+}
+font.project_nitro {
+  font-family: geekspeak, Segoe UI, Tahoma, serif;
+  font-size: 18px;
+  color: white;
+  /* text-shadow:0px 0px 3px #00C221; */
+  /* text-shadow:0px 0px 1px #FFFFFF; */
+  text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+font.pn_font{
+	font-family: project_nitro; 
+	color:white;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+font.jasm {
+	font-family: twinsfont;
+	font-size: 30px;
+	text-transform: lowercase;
+}
+font.jasm_old {
+	font-family: twinsfont_old;
+	font-size: 30;
+	text-transform: lowercase;
+}
+font.level_stat{
+	font-family: twinsfont;
+	color:white;
+	text-transform: lowercase;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+font.front {
+	font-family: twinsfont;
+	font-size: 25;
+	text-transform: lowercase;
+}
+table.twins {
+ /* background-color: #70BEFF; */
+ background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 15px;
+ padding: 10px;
+}
+table.twins_alt {
+	background: -webkit-linear-gradient(left top, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white;
+	border-radius: 15px;
+	padding: 10px;
+}
+table.project_nitro {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	padding: 10px;
+}
+table.project_nitro_good {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(0,192,255,0.5);
+	border-radius: 0px;
+	padding: 10px;
+}
+table.project_nitro_evil {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,0,0,0.5);
+	border-radius: 0px;
+	padding: 10px;
+}
+table.project_nitro_secret {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(125,125,125,0.5);
+	border-radius: 0px;
+	padding: 10px;
+}
+table.project_nitro_secret2 {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,0,255,0.5);
+	border-radius: 0px;
+	padding: 10px;
+}
+table.title {
+	background: -webkit-linear-gradient(left top, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(230,230,0,1), rgba(255,177,112,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white;
+	border-radius: 0px;
+	padding: 10px;
+	
+	text-shadow:
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+	   
+}
+table.title_pn {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	padding: 10px;
+	font-family: project_nitro, Segoe UI, Tahoma, serif;
+	font-size: 26;
+	color: white;
+	padding-bottom: 6px;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+table.title1 {
+	background: -webkit-linear-gradient(left top, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white;
+	padding: 10px;
+}
+table.title_mod {
+	background: -webkit-linear-gradient(left top, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+	padding: 5px;
+}
+table.oldtitle {
+	background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white;
+	padding: 10px;
+}
+table.side{
+	border-spacing: 15px 0px;
+	border-radius: 15px;
+}
+table.multi{
+	border-spacing: 15px 15px;
+	border-radius: 15px;
+}
+ul {
+   list-style-image: url('/media/twin_tech3.png');
+}
+td.twins{
+	border-spacing: 15px;
+	/* background-color: #70BEFF; */
+	background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+	border-radius: 15px;
+	padding: 10px;
+}
+td.twins1{
+	border-spacing: 15px;
+	/* background-color: #70BEFF; */
+	background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+	border-radius: 0px;
+	padding: 10px;
+}
+td.twins1_alt{
+	border-spacing: 15px;
+	/* background-color: #70BEFF; */
+	background: -webkit-linear-gradient(left top, rgba(243,255,100,1) , rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(243,255,100,1) , rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(243,255,100,1) , rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(243,255,100,1) , rgba(255,177,112,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+	border-radius: 0px;
+	padding: 10px;
+}
+td.twins1_nopad{
+	border-spacing: 15px;
+	/* background-color: #70BEFF; */
+	background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+	box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+	border-radius: 0px;
+	padding: 0px;
+}
+td.project_nitro {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	padding: 10px;
+	color: white;
+	font-family: Segoe UI, Tahoma, serif;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+td.project_nitro_leaderboards {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	padding-top: 8px;
+	color: white;
+	font-family: project_nitro, Segoe UI, Tahoma, serif;
+	font-size: 26;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+td.project_nitro_leaderboards_normal {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	padding-top: 8px;
+	color: white;
+	font-family: project_nitro, Segoe UI, Tahoma, serif;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+td.project_nitro_leaderboards_fixer {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	color: white;
+	font-family: project_nitro, Segoe UI, Tahoma, serif;
+	font-size: 20;
+	text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+table.plank {
+	background-image: url('/media/plank.png');
+	background-repeat: no-repeat;
+	background-position: center;
+
+ padding: 5px;
+ background-size: 100% 100%;
+ 
+ color:white;
+ font-size:20;
+ text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+table.sidebar {
+ background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 15px;
+}
+table.sidebar1 {
+ background: -webkit-linear-gradient(left top, rgba(112,190,255,1) , rgba(112,100,255,1)); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(bottom right, rgba(112,190,255,1), rgba(112,100,255,1)); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to bottom right, rgba(112,190,255,1) , rgba(112,100,255,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 0px;
+}
+table.sidebar2 {
+	background: -webkit-linear-gradient(left top, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(243,255,100,1), rgba(255,177,112,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 0px;
+}
+table.sidebar3 {
+	background: -webkit-linear-gradient(left top, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 15px;
+}
+table.sidebar4 {
+	background: -webkit-linear-gradient(left top, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(174,174,174,1), rgba(121,121,121,1)); /* Standard syntax (must be last) */
+ box-shadow: 0 0 0 3pt white, 2px 2px 0 5px rgba(0, 0, 0, 0.50);
+ border-radius: 0px;
+}
+table.sidebar_pn{
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 0 3pt rgba(255,255,0,0.5);
+	border-radius: 0px;
+	font-family: project_nitro; 
+	padding: 3px 0px 0px 0px;
+	color: #4CFF00;
+}
+td.pn_normal{
+	border: 5px rgba(255,255,0,1);
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 5px;
+}
+td.pn_good{
+	border: 5px rgba(0,192,255,1);
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 5px;
+}
+td.pn_evil{
+	border: 5px rgba(255,0,0,1);
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 5px;
+}
+td.pn_secret{
+	border: 5px rgba(255,0,255,1);
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 5px;
+}
+iframe.sidebar {
+ width: 125px;
+ height: 100%;
+ outline: none;
+}
+video#bgvid { 
+
+position: fixed; right: 0; bottom: 0;
+
+min-width: 100%; min-height: 100%;
+
+width: auto; height: auto; z-index: -100;
+
+}
+video#left { 
+
+position: fixed; bottom: 0;
+
+min-width: 50%; min-height: 100%;
+
+height: auto; z-index: -100;
+
+}
+video#right { 
+
+position: fixed; left: 50%; bottom: 0;
+
+min-width: 50%; 
+
+height: 100%; z-index: -99;
+
+}
+div.sider {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.bg_option_switcher select {
+   border: 0;
+   border-radius: 0;
+   overflow: hidden;
+   color: white;
+   -webkit-appearance: none;
+   background: url("media/arrow.png") no-repeat right transparent;
+}
+
+option {
+	font-family: twinsfont;
+	font-size: 15px;
+	background : rgba(112,145,255,1);
+	text-transform: lowercase;
+}
+select {
+	font-family: twinsfont;
+	font-size: 15px;
+	text-transform: lowercase;
+}
+option.pn {
+	font-family: project_nitro; 
+	background : rgba(0,0,0,0.5);
+}
+select.pn {
+	font-family: project_nitro; 
+}
+
+h1.captionGradient {
+	margin: 0px;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffff00), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffff00,#ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    position: relative;
+	font-family: twinsfont; 
+	font-size: 50px;
+	line-height: 105%;
+	text-align: left;
+	letter-spacing: 6px;
+}
+
+h1.captionGradient:after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+	-webkit-text-stroke: thick;
+    text-shadow:
+       6px 6px 0 #000;
+    top: 0;
+    z-index: -1;
+}
+
+h1.captionGradientR {
+	margin: 0px;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffff00), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffff00,#ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    position: relative;
+	font-family: twinsfont; 
+	font-size: 50px;
+	line-height: 105%;
+	text-align: right;
+	letter-spacing: 6px;
+}
+
+h1.captionGradientR:after {
+    background: none;
+    content: attr(data-text);
+    right: 0;
+    position: absolute;
+	-webkit-text-stroke: thick;
+    text-shadow:
+       6px 6px 0 #000;
+    top: 0;
+    z-index: -1;
+}
+
+.container { position:relative; padding:0 0 0 95px;}
+#sidebar {
+    position:absolute;
+    left:5;
+	top:4;
+	height: -moz-calc(100% - 4px);
+	height: -webkit-calc(100% - 4px);
+	height: -o-calc(100% - 4px);
+	height: calc(100% - 4px);
+}
+#pagebar {
+	position:absolute;
+    right:5;
+	top:4;
+	height: -moz-calc(100% - 4px);
+	height: -webkit-calc(100% - 4px);
+	height: -o-calc(100% - 4px);
+	height: calc(100% - 4px);
+}
+
+#header { width:100%; height:42px; 
+    margin:0 0 10px 5px;
+}
+#content { height:100%;
+    margin:0 0 0 20;
+	padding: 0 10 0 10;
+	overflow: auto;
+}
+#footer { border:1px solid #000; width:100px; height:5px;
+    margin:5px 0 0 0;
+}
