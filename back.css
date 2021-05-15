@@ -98,11 +98,11 @@ a.pn:active {
 
 @font-face { 
 	font-family: twinsfont_old; 
-	src: url('/twinsfont_v2.ttf');
+	src: url('./twinsfont_v2.ttf');
 	} 
 @font-face { 
 	font-family: twinsfont; 
-	src: url('/Twelve Ton Goldfish.ttf');
+	src: url('./font.ttf');
 	} 
 font.shad {
   font-family: Segoe UI, Tahoma, serif;
