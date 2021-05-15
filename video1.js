@@ -1,13 +1,13 @@
 var videos_mp4 = [
-    '/media/bg_lab.mp4',
+    './media/bg_lab.mp4',
 ];
 
 var videos_webm = [
-    '/media/bg_lab_VP8_001.webm',
+    './media/bg_lab_VP8_001.webm',
 ];
 
 var posters = [
-	'/media/bg_lab.png',
+	'./media/bg_lab.png',
 ];
 
 function setCookie(cname, cvalue, exdays) {
