@@ -7,7 +7,7 @@ var videos_webm = [
 ];
 
 var posters = [
-	'./media/bg_lab.png',
+	'./media/bg_lab.webp',
 ];
 
 function setCookie(cname, cvalue, exdays) {
@@ -55,20 +55,8 @@ function setBGtype() {
 
 
 $(function(){
-	if(window.location.href.indexOf("project_nitro") > -1) {
-		$("#sidebar").load("/project_nitro/sidebar.html"); 
-	}
-	else
-	{
-		if(window.location.href.indexOf("/demo/") > -1) {
-			$("#sidebar").load("/demo/sidebar.html"); 
-		}
-		else
-		{
-			$("#sidebar").load("/sidebar.html"); 
-		}
-	}
-	$("#pagebar").load("/pagebar.html"); 
+	$("#sidebar").load("./sidebar.html"); 
+	$("#pagebar").load("./pagebar.html"); 
 });
 
 var bg_type=""
