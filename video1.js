@@ -81,3 +81,10 @@ else {
 
 var header = document.getElementsByTagName('head');
 header[0].innerHTML += addition;
+
+$(document).ready(function () {
+    $(window).load(function () {
+        setTimeout(function(){
+        },1000);
+    });  
+});

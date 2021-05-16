@@ -268,7 +268,7 @@ table.multi{
 	border-radius: 15px;
 }
 ul {
-   list-style-image: url('/media/twin_tech3.png');
+   list-style-image: url('./media/twin_tech3.png');
 }
 td.twins{
 	border-spacing: 15px;
@@ -498,7 +498,7 @@ div.sider {
    overflow: hidden;
    color: white;
    -webkit-appearance: none;
-   background: url("media/arrow.png") no-repeat right transparent;
+   background: url("./media/arrow.png") no-repeat right transparent;
 }
 
 option {
