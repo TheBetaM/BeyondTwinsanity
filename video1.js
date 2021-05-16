@@ -70,33 +70,16 @@ if (bg_type == "video") {
 	if (index == "" || index == "random") {
 		index=Math.floor(Math.random() * videos_mp4.length);
 	}
-	if (index != "project_nitro") {
-		addition='<video id="bgvid" muted autoplay loop><source src="' + videos_mp4[index] + '" type="video/mp4"><source src="' + videos_webm[index] + '" type="video/webm"></video>';
-	}
-	else {
-		addition='<video id="bgvid" muted autoplay loop><source src="/media/project_nitro_bg.mp4" type="video/mp4"><source src="/media/project_nitro_bg.webm" type="video/webm"></video>';
-	}
+	addition='<video id="bgvid" muted autoplay loop><source src="' + videos_mp4[index] + '" type="video/mp4"><source src="' + videos_webm[index] + '" type="video/webm"></video>';
 }
 else {
 	if (index == "" || index == "random") {
 		index=Math.floor(Math.random() * posters.length);
 	}
-	if (index != "project_nitro") {
-		addition='<style> body { background-color: #000000; background-image:url(' + posters[index] + '); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; } </style>';
-	}
-	else {
-		addition='<style> body { background-color: #000000; background-image:url(/media/project_nitro_bg.png); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; } </style>';
-	}
+	addition='<style> body { background-color: #000000; background-image:url(' + posters[index] + '); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; } </style>';
 }
 
-if(window.location.href.indexOf("project_nitro") > -1) {
-	if (bg_type == "video") {
-		addition='<video id="bgvid" muted autoplay loop><source src="/media/project_nitro_bg.mp4" type="video/mp4"><source src="/media/project_nitro_bg.webm" type="video/webm"></video>';
-	}
-	else {
-		addition='<style> body { background-color: #000000; background-image:url(/media/project_nitro_bg.png); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; } </style>';
-	}
-}
-
-document.write(addition);
-document.close(addition);
+//document.write(addition);
+//document.close(addition);
+var header = document.getElementsByTagName('head');
+headers[0].innerHTML += addition;
