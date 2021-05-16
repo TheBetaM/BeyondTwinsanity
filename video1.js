@@ -79,7 +79,5 @@ else {
 	addition='<style> body { background-color: #000000; background-image:url(' + posters[index] + '); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; } </style>';
 }
 
-//document.write(addition);
-//document.close(addition);
 var header = document.getElementsByTagName('head');
-headers[0].innerHTML += addition;
+header[0].innerHTML += addition;
